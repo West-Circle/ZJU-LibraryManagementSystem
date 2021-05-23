@@ -1,0 +1,34 @@
+book
+insert into book values ('bno1','计算机科学','数据结构与算法分析','清华大学出版社',1998,'郭政',79.80,50,39);
+insert into book values ('bno2','物理','大学物理甲(Ⅰ)','清华大学出版社',2013,'李昊',39.00,90,67);
+insert into book values ('bno3','数学','微积分甲(Ⅰ)','浙江大学出版社',2008,'苏德矿',59.00,80,43);
+insert into book values ('bno4','教育','教育孩子从小开始','电子工业出版社',2015,'高祥',30.00,70,53);
+insert into book values ('bno5','外语','英文写作方法','高等教育出版社',2010,'庞龙',35.00,40,32);
+insert into book values ('bno6','计算机科学','数据库系统原理','清华大学出版社',2000,'王珊',79.00,100,34);
+
+admin
+insert into admin values ('admin1','admin1','张三','19837583948');
+insert into admin values ('admin2','admin2','李念','13578038723');
+insert into admin values ('admin3','admin3','王亿','17676456235');
+
+card
+insert into card values('cno1','cno1','张三','计算机学院','S');
+insert into card values('cno2','cno2','李四','农学院','S');
+insert into card values('cno3','cno3','王五','计算机学院','S');
+insert into card values('cno4','cno4','林文宏','计算机学院','T');
+insert into card values('cno5','cno5','廖亦辰','经济学院','T');
+insert into card values('cno6','cno6','张丽坤','经济学院','T');
+insert into card values('cno7','cno7','刘浩然','农学院','T');
+
+borrow
+insert into borrow values('cno1','bno1','admin1','2020-6-4','2020-7-10');
+insert into borrow values('cno1','bno2','admin2','2020-7-5','2020-8-10');
+insert into borrow values('cno2','bno2','admin3','2020-7-9','2020-8-23');
+insert into borrow values('cno3','bno3','admin1','2020-8-4','2020-8-25');
+insert into borrow values('cno4','bno4','admin1','2020-9-10','2020-10-5');
+insert into borrow values('cno4','bno2','admin2','2020-10-7','2020-10-28');
+insert into borrow values('cno3','bno2','admin2','2020-11-21','2020-12-10');
+insert into borrow values('cno4','bno5','admin1','2021-1-5',null);
+insert into borrow values('cno5','bno5','admin3','2021-3-1',null);
+insert into borrow values('cno6','bno1','admin3','2021-4-3',null);
+insert into borrow values('cno6','bno6','admin1','2021-4-20',null);

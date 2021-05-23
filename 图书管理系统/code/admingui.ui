@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminGUI</class>
+ <widget class="QMainWindow" name="AdminGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1019</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>管理员操作系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>931</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>管理操作</string>
+    </property>
+    <widget class="QLabel" name="insertbooklabel">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>310</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>图书入库</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="borrowbooklabel">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>310</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>图书借阅</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="returnbooklabel">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>310</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>借阅信息与图书归还</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="manageuserlabel">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>310</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>用户管理</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="insertbookbutton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>60</y>
+       <width>180</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#insertbookbutton {
+	border-image : url(:/images/insert.png)
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="borrowbookbutton">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>180</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#borrowbookbutton {
+	border-image : url(:/images/borrow.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="returnbookbutton">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>60</y>
+       <width>180</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#returnbookbutton {
+	border-image : url(:/images/return.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="manageuserbutton">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>70</y>
+       <width>180</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#manageuserbutton {
+	border-image : url(:/images/manageuser.png);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="adminidlabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>621</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>管理员ID : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ticklabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#ticklabel  {
+	border-image : url(:/images/tick.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1019</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Operation</string>
+    </property>
+    <addaction name="actionInsert_Book"/>
+    <addaction name="separator"/>
+    <addaction name="actionBorrow_Book_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionReturn_Book_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionManage_User_2"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout_System"/>
+   </widget>
+   <widget class="QMenu" name="menuExit">
+    <property name="title">
+     <string>Exit</string>
+    </property>
+    <addaction name="actionExit"/>
+    <addaction name="actionExit_2"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuExit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionInsert_Book">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/insert.png</normaloff>:/images/insert.png</iconset>
+   </property>
+   <property name="text">
+    <string>Insert Book</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionBorrow_Book_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/borrow.png</normaloff>:/images/borrow.png</iconset>
+   </property>
+   <property name="text">
+    <string>Borrow Book</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionReturn_Book_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/return.png</normaloff>:/images/return.png</iconset>
+   </property>
+   <property name="text">
+    <string>Return Book</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionManage_User_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/manageuser.png</normaloff>:/images/manageuser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manage User</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionAbout_System">
+   <property name="text">
+    <string>About System</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionExit_2">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

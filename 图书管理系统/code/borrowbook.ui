@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BorrowBook</class>
+ <widget class="QWidget" name="BorrowBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>借阅书籍</string>
+  </property>
+  <widget class="QLabel" name="category">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>110</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>类别 : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="price">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>360</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>价格 :</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="press_line">
+   <property name="geometry">
+    <rect>
+     <x>188</x>
+     <y>210</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="bookname_line">
+   <property name="geometry">
+    <rect>
+     <x>188</x>
+     <y>160</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="press">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>210</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>出版社 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bookname">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>160</y>
+     <width>91</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>书名 :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bno">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>60</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>书号 : </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="bno_line">
+   <property name="geometry">
+    <rect>
+     <x>188</x>
+     <y>60</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="category_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>计算机科学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>软件技术</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>汇编语言</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>数字货币与区块链技术</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>航空航天</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>工业技术</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>政治</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>法律</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>New Item</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>哲学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>经济</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>历史</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>地理</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>金融</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>农业科学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>环境科学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>交通运输</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>数学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>生物</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>化学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>物理</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>天文学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>医药学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>卫生</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>艺术</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>文学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>体育</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>语言学</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>外语</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>教育</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>军事</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>马克思主义</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>海洋环境</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="year">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>310</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>出版年份 : </string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="pricebox1">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>360</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="maximum">
+    <double>3000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="yearbox1">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>310</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="maximum">
+    <number>3000</number>
+   </property>
+   <property name="value">
+    <number>1980</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="yearbox2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>310</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="maximum">
+    <number>3000</number>
+   </property>
+   <property name="value">
+    <number>2021</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="pricebox2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>360</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="maximum">
+    <double>3000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>100.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>345</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>295</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cno">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>460</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>借书证号 : </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cno_line">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>460</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="searchbutton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>410</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="listeverybookbutton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>410</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>列出所有书籍</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="refreshbutton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>410</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>刷新列表</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="borrowbutton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>510</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>借阅</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="idlabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>441</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>管理员ID : </string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="BookTable">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>20</y>
+     <width>591</width>
+     <height>510</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="lineWidth">
+    <number>2</number>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>书号</string>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>类别</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>书名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>出版社</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>出版年份</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>作者</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>价格</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>总藏书量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>库存量</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>550</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="author_line">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>260</y>
+     <width>250</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="author">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>260</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>作者 :</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
